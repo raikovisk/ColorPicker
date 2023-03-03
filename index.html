@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap');
+    </style>
+    <title>RBG Picker tool</title>
+</head>
+<body>
+    <h1>Welcome to RBG Picker tool</h1>
+    <div id="container">
+        <div class='sliders'>
+            <div id="red" class="flex-row">
+                <span class="label">(R) Vermelho:</span>
+                <input type="range" class="range" id='rangeRed' value="0" min="0" max="255">
+                <input disabled id="textRed" type="text" class="inputText" value="0">
+            </div>
+            <div id="green" class="flex-row">
+                <span class="label">(G) Verde:</span> 
+                <input type="range" class="range" id='rangeGreen' value="0" min="0" max="255">
+                <input disabled id="textGreen" type="text" class="inputText" value="0">
+            </div>
+            <div id="blue" class="flex-row">
+                <span class="label">(B) Azul:</span>
+                <input type="range" class="range" id='rangeBlue' value="0" min="0" max="255">
+                <input disabled id="textBlue" type="text" class="inputText" value="0">
+            </div>
+            <span id="rgbValue"></span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
