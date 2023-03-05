@@ -44,6 +44,7 @@ body{
 .inputText{
     margin-left: 1.5rem;
     width: 5rem;
+    color: silver;
 }
 
 .sliders {
